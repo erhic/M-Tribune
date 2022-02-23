@@ -1,5 +1,6 @@
-from django.conf.urls import url
+from django.urls import path
 from . import views
 urlpatterns=[
-    url('^$',views.welcome,name='welcome')
+    path('',views.welcome,name='welcome'),
+    path('news_of_day/',views.news_of_day,name='news_of_day'),
 ]
